@@ -1,0 +1,85 @@
+			02 Dizin Dosya İşlemleri
+
+
+"pwd" komutu o an içinde bulunduğumuz dizini gösteren komuttur. 
+
+" ls " komutu bulunduğumuz dizindeki dosyaları gösteren komuttur. Beyazlar dosya, maviler dizin, yeşiller çalıştırılabilir dosyaları ifade eder.
+
+"cd" komutu dosyalar arası geçiş yapmamızı sağlar.  
+
+"locate doosyadı" komutu dosya ve dizin arar. 
+
+"touch dosyaadı.uzantısı" komutu yeni bir dosya oluşturmamızı sağlar. 
+
+" echo dosyayaEklenmekİstenenMetin > Dosyadı.Uzantısı" komutuyla dosyaya yazı eklenebilir. 
+
+"cat" komutu çok uzun olan dosyanın tamamını okuyamazsa "more" komutu kullanılır. Bu komut dosyanın tamamını okur. "more" komutu yerine "less" komutu da kullanılabilir. 
+
+"grep aranankelime neredearanıyor" komutu "grep dosya /home" gibi belitrilen dizindeki aranan kelimeyi içerekn dosyaların getirilmesini sağlar.
+
+
+	Dizin İşlemleri: 
+
+"mkdir dizinİsmi" komutuyla yeni bir dizin oluşturulabilir. 
+
+"rm -rf dizinadı" komutu var olan dizini siler. 
+
+"cp dosyaAdı kopyalanmakİstenenYerDosyayolu" komutu dosyaları kopyalar. "cp dosya.txt /home/kali"
+
+"." blunduğumuz dizini ".." bulunduğumuz dizinden bir gerideki dizini ifade eder. 
+
+Dizin kopyalamak istersek "cp -r dosyaAdı kopyalanmakİstenenYerDosyayolu" komutu kullanılır. 
+
+"mv dosyaadı belirtilenDosyaYolu/" komutuyla dosya belirttiğimiz yere taşınır. 
+
+"tar -cf arşiv.tar  " komutu dizin ve dosyaları arşivlememizi sağlar. 
+
+"tar -xf arşiv.tar  " komutu dizin ve dosyaları arşivden çıkarmamızı sağlar. 
+
+"tar -zcf arşiv.tar.gz  " komutu dizin ve dosyaları sıkıştırarak arşivlememizi sağlar. 
+
+"bzip2 dosyadı.uzantı" sıkıştırarak arşivler. 
+
+"bunzip2 dosyadı.uzantı" sıkıştırılmış dosyayı arşivden çıkarır.  
+
+"unzip dosyaadı.uzantı" komutu sıkıştırılmış dosyayı açar. 
+
+
+	Dosya Dizin İzinleri: 
+
+r = 4 okuma 
+w = 2 yazma
+x = 1 çalıştırma
+d = dizin
+- = dosya
+
+"chmod 745" gibi rakamlarla yetkiler düzenlenebilir.  
+
+"shadow" dpsyasında kullancı adları ve şifrelerinin hashli(şifrelenmiş) hali bulunur.
+
+"psswd kullanıcıadı" komutuyla şifre değiştirilebilir. 
+ 
+"adduser kullanıcıadı" yeni kullanıcı ekler. 
+
+"usermod -L" komutu kullanıcı pasif hale getirir. 
+
+"usermod -U" komutu kullanıcı tekrar aktif hale getirir. 
+
+"su kullanıcıadı" komutu kullanıcılar arası geçiş yapar.
+
+
+ 	Süreçler:
+
+ "ps kullanıcıadı" komutu kullancının çalışan sistem süreçlerini gösterir. 
+
+
+"pstree -p kullanıcıadı" süreçlerin pid numarasını da gösterir. 
+
+İşlemi sonlandırmak için "kill pidnumarası" komutu kullanılarak kapatırız. 
+
+"kill -9 piid" zorla kapat demektir. Süreçler zorla durdurulur.
+
+pid numarası olmadan, kullanıcı adıyla da süreçler sonlandırılabilir. 
+
+
+

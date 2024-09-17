@@ -1,0 +1,45 @@
+			01 Giriş ve Kavramlar
+
+
+Komut satırının adı shell, kabuk veya uçbirim olabilir. Komut satırı bir programndır ve alternatifleri vardır. 
+
+Komut satırında kullanmış olduğumuz programı öğrenmek için " echo $SHELL " komutu kullanılır. 
+
+# işareti root kullanıcı olduğunu belirtir. 
+
+" history " komutu daha önceden işlemiş olduğumz komutları gösterir. 
+
+" echo $PATH " komutu bulunduğumuz yerdeki ortam deişkenlerini gösterir. Ortam değişkenleri sayesinde sadece dosyanın ismini yazarak dosyaya gidebiliriz. Yolunu yazmamıza gerek kalmaz. 
+
+
+	Komut Yardımı Alma: 
+
+" ahatis komutAdı" komutuyla kullanıdğımız komutun kullanımı hakkında özet bilgi alabiliriz. 
+
+" apropos komutAdi" komutu hatırlamakta zorlandığımız veya sadece birkaç harfini hatırladığımız kodun tamamının bulunmasını sağlar. 
+
+" komutAdı --help " parametresi bize kullanıdğımız komut veya program hakında detaylı bilgi verir.
+
+"man KomutAdı" tam kapsamlı bir bilgilendirme klavuzudur.  
+
+
+	Sistem Bilgisi Alma:
+
+" hostname" komutuyla kullanıyor olduğumuz bilgisayarın adı hakkında bilgi alırız. 
+
+" lsb_release --all " komutuyla dağıtıma özel olan bilgileri getirir. 
+
+"cat dosyayolu " kullanılan dağırımın alt bilgisini verir. Okulabilir dosyaları komut satırına yazar. 
+
+" uname " kullanmış oldğumuzun dağıtımın çekirdek bilgisini verir. 
+
+
+	Kullanıcı Bilgisi Alma: 
+
+"psswd " komutu ile kullanıcı adı, kullanıcıya ait olan dizin ve kullanıcının kullandığı program bilgilerini görürüz.
+
+" w " komutu bize aktif olan kullanıcıları gösterir. Kullanıcıların sisteme ne zaman girdiği bilgisini verir. 
+
+" whoami" komutu hangi ullanıcının kullandığı bilgisini verir. 
+
+"uptime " komutu sistemin ne kadar zamandır aktif olduğu bilgisini verir. 

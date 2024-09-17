@@ -1,0 +1,30 @@
+		04 Network Araçları ve IP Sabitleme
+
+
+"ipconfig" komutu adres bilgilerimizi gösterir. 
+
+"route -n" modem(yönlendirici) bilgilerini gösterir. 
+
+"service network-manager stop" komutu ile servis durdurulurken "service network-manager start" komutu ile de tekrar çalıştırılır. 
+
+
+	IP Adresi Sabitleme:
+
+"mousepad /etc/network/interfaces" komutuyla dosya içine girilir. "auto lo" ve "iface lo inet loopback" satırlarnın başına # işateri konularak etkisiz hale getirilir. 
+
+Sonra "iface eth0 inet static
+			address 192.168.1.200
+			netmask 255.255.255.0
+			broadcast 192.168.11.255
+			gateway 192.168.1.1" komutu yazılır. 
+
+Bilgisayarı yeniden başlatmak gerekir. 
+
+Cihazın ağa bağlanması için "ifup eth0" komutuyla ağ kartı ayağa kalkar. 
+
+Böylece bilgisayarımıza static bir IP adresi atanmış olur. 
+
+
+Log dosyaları bilgisayarda yapılan işlemleri tutar. 
+
+Geçmişe yönelik yazılmış kodları "history" komutu sayesinde görebiliriz. 

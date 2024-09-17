@@ -1,0 +1,40 @@
+			03 Kurulum İşlemleri
+
+
+	Kaynak Koddan Dosya Kaldırma Kurma: 
+
+Tarayıcıdan bulduğumuz kaynak kodları satır satır yazıp çalıştırarak kurulum işlemi tamamlanır. Derleme işlemi yapılır. 
+
+
+	Derlenmiş Paketten Dosya Kurma:
+
+Paket kurumu için "dpkg" komutu kullanılır. 
+
+"dpkg -i paketadı" komutuyla kurulum yapılır. 
+
+Paketi kurduktan sonra programın eksikleri varsa " apt install -f" komutu kullanarak eksik dosyaların kurulumu tamamlanır. 
+
+Paketi kaldırmak için "dpkg -l | grel arananKelime" komutuyla programın adı öğrenilir ve "apt remove paketadı" komutuyla silme işlemi tamamlanır. 
+
+
+	Depodan Dosya Kurma Kaldırma: 
+
+Kendi sunucumuzda derlenmiş olarak bulunan uygulamaları kurmak için kullanılır. 
+
+"apt install paketadı" komutuyla kurulum yapılır. 
+
+"apt list" komutuyla kurmak istediğimiz uygulamanın tam adını öğrenebiliriz. 
+
+
+	Metin Editörleri:
+
+Komut satırında çalışan metin editörü vim editördür. "vim dosya.txt" komutuyla eğer dosya mevcutsa açılır, mevcut değilse dosya oluturulur ve sonra açılır. 
+
+İnsert modda i tuşuna bastıktan sonra dosya içine girilir ve düzenlemeler yapılır. esc tuşuyla çıkış yapıldıktan sonra ":wq" komutu kullanılarak dosya kaydedilir. Kaydetmeden çıkmak istiyorsak ":q" komutu kullanılır. 
+
+"nano dosyadı.txt" komut satırı üzerinden dosyaları düzenleyebileceğimiz bir metin editörüdür. 
+
+İçerisinde komutlara karşılık gelen ifadeler sayesinde işlem yapabiliriz. 
+
+"leafpad", "gedit" ve "mousepad" adında 3 tane daha metin editörü bulunur. 
+
